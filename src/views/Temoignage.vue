@@ -112,7 +112,7 @@
                   <i class="bi bi-envelope flex-shrink-0"></i>
                   <div>
                     <h3>Email</h3>
-                    <p><a href="mailto:israelmutombo9319@gmail.com" style="color:green;">israelmutombo9319@gmail.com</a></p>
+                    <p><a href="mailto:imdigitallabs@gmail.com" style="color:green;">imdigitallabs@gmail.com</a></p>
                   </div>
                 </div>
               </div>
@@ -128,20 +128,20 @@
       <!-- Credits Section -->
       <section id="credits" class="credits section">
         <div class="container section-title" data-aos="fade-up">
-          <h2>Conception</h2>
-          <p>Ce site a été créé avec amour et soin pour honorer la mémoire de Henock Ngandu Kabadi.</p>
+          <h2 class="credits-title">Conception</h2>
+          <p class="credits-subtitle">Ce site a été créé avec amour et soin pour honorer la mémoire de Henock Ngandu Kabadi.</p>
         </div>
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="text-center">
-            <p>Conception et développement par <strong style="color: #d4af37;">IM DIGITAL LABS</strong>.</p>
-            <p>
-              <strong>Contact direct :</strong><br>
-              <a href="https://wa.me/243991683269" target="_blank" style="color: #25D366; margin-right: 15px;">WhatsApp: +243 991 683 269</a><br>
-              <a href="mailto:israelmutombo9319@gmail.com" style="color: green;">Email: israelmutombo9319@gmail.com</a>
+          <div class="text-center credits-content">
+            <p class="credits-text">Conception et développement par <strong class="credits-brand">IM DIGITAL LABS</strong>.</p>
+            <p class="credits-text">
+              <strong class="credits-label">Contact direct :</strong><br>
+              <a href="https://wa.me/243991683269" target="_blank" class="credits-link whatsapp-link">WhatsApp: +243 991 683 269</a><br>
+              <a href="mailto:imdigitallabs@gmail.com" class="credits-link email-link">Email: imdigitallabs@gmail.com</a>
             </p>
-            <p>Nous espérons que ce site continuera à célébrer la vie et l'héritage de Henock, tout en permettant à ses proches de se souvenir de lui avec tendresse.</p>
-            <p>Merci pour votre visite.</p>
+            <p class="credits-text">Nous espérons que ce site continuera à célébrer la vie et l'héritage de Henock, tout en permettant à ses proches de se souvenir de lui avec tendresse.</p>
+            <p class="credits-text">Merci pour votre visite.</p>
           </div>
         </div>
       </section>
@@ -276,4 +276,60 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+/* Styles pour la section Credits - Visibilité selon le thème */
+.credits-title {
+  color: var(--heading-color) !important;
+}
+
+.credits-subtitle {
+  color: var(--default-color) !important;
+}
+
+.credits-content {
+  color: var(--default-color);
+}
+
+.credits-content p,
+.credits-text {
+  color: var(--default-color) !important;
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.credits-brand {
+  color: var(--accent-color) !important;
+  font-weight: 700;
+}
+
+.credits-label {
+  color: var(--heading-color) !important;
+  font-weight: 600;
+}
+
+.credits-link {
+  color: var(--accent-color) !important;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.credits-link:hover {
+  color: color-mix(in srgb, var(--accent-color), black 15%) !important;
+  text-decoration: underline;
+}
+
+.whatsapp-link {
+  color: #25D366 !important;
+}
+
+.whatsapp-link:hover {
+  color: #20ba5a !important;
+}
+
+.email-link {
+  color: var(--accent-color) !important;
+}
+</style>
 

@@ -10,6 +10,15 @@ export default defineConfig({
     }
   },
   publicDir: 'public',
-  assetsInclude: ['**/*.PNG', '**/*.png']
+  assetsInclude: ['**/*.PNG', '**/*.png'],
+  server: {
+    host: 'localhost',
+    port: 5173,
+    hmr: {
+      protocol: 'ws',
+      host: 'localhost',
+      port: 5173
+    }
+  }
 })
 

@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "html2canvas": "^1.4.1",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
   },
@@ -16,4 +17,3 @@
     "vite": "^5.0.0"
   }
 }
-

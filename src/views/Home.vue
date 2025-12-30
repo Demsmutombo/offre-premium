@@ -57,33 +57,33 @@
       </section>
 
       <!-- Obsèques Section -->
-      <section id="funeral-info" class="section" style="background-color: #f9f9f9;">
+      <section id="funeral-info" class="section funeral-info-section">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>Informations sur les Obsèques</h2>
-            <p>Détails des cérémonies et lieu de sépulture</p>
+            <h2 class="funeral-title">Informations sur les Obsèques</h2>
+            <p class="funeral-subtitle">Détails des cérémonies et lieu de sépulture</p>
           </div>
           <div class="row gy-4">
             <div class="col-md-6">
-              <div class="info-item" style="padding: 25px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <h4 style="color: var(--accent-color); margin-bottom: 20px;"><i class="bi bi-calendar-event me-2"></i>Veillée Mortuaire</h4>
-                <p><strong>Date :</strong> Dimanche 8 Septembre 2024</p>
-                <p><strong>Heure :</strong> 18h00</p>
-                <p><strong>Lieu :</strong> Domicile familial</p>
+              <div class="funeral-info-item">
+                <h4 class="funeral-info-title"><i class="bi bi-calendar-event me-2"></i>Veillée Mortuaire</h4>
+                <p class="funeral-info-text"><strong class="funeral-info-label">Date :</strong> Dimanche 8 Septembre 2024</p>
+                <p class="funeral-info-text"><strong class="funeral-info-label">Heure :</strong> 18h00</p>
+                <p class="funeral-info-text"><strong class="funeral-info-label">Lieu :</strong> Domicile familial</p>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="info-item" style="padding: 25px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <h4 style="color: var(--accent-color); margin-bottom: 20px;"><i class="bi bi-calendar-check me-2"></i>Cérémonie Funéraire</h4>
-                <p><strong>Date :</strong> Lundi 9 Septembre 2024</p>
-                <p><strong>Heure :</strong> 10h00</p>
-                <p><strong>Lieu :</strong> Église [À compléter]</p>
+              <div class="funeral-info-item">
+                <h4 class="funeral-info-title"><i class="bi bi-calendar-check me-2"></i>Cérémonie Funéraire</h4>
+                <p class="funeral-info-text"><strong class="funeral-info-label">Date :</strong> Lundi 9 Septembre 2024</p>
+                <p class="funeral-info-text"><strong class="funeral-info-label">Heure :</strong> 10h00</p>
+                <p class="funeral-info-text"><strong class="funeral-info-label">Lieu :</strong> Église [À compléter]</p>
               </div>
             </div>
             <div class="col-md-12">
-              <div class="info-item" style="padding: 25px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <h4 style="color: var(--accent-color); margin-bottom: 20px;"><i class="bi bi-geo-alt me-2"></i>Lieu de Sépulture</h4>
-                <p><strong>Cimetière :</strong> Nécropole de l'Eternité</p>
+              <div class="funeral-info-item">
+                <h4 class="funeral-info-title"><i class="bi bi-geo-alt me-2"></i>Lieu de Sépulture</h4>
+                <p class="funeral-info-text"><strong class="funeral-info-label">Cimetière :</strong> Nécropole de l'Eternité</p>
               </div>
             </div>
           </div>
@@ -209,14 +209,14 @@
             <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
               <!-- Cimetière Images -->
               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" v-for="img in cimetiereImages" :key="img">
-                <a :href="img" data-lightbox="gallery" data-title="Cimetière">
+                <a :href="img" class="glightbox" data-glightbox="gallery" data-title="Cimetière">
                   <img :src="img" class="img-fluid" alt="">
                 </a>
               </div>
 
               <!-- Morgue Images -->
               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" v-for="img in morgueImages" :key="img">
-                <a :href="img" data-lightbox="gallery" data-title="Morgue">
+                <a :href="img" class="glightbox" data-glightbox="gallery" data-title="Morgue">
                   <img :src="img" class="img-fluid" alt="">
                 </a>
               </div>
@@ -295,7 +295,7 @@
                   <i class="bi bi-envelope flex-shrink-0"></i>
                   <div>
                     <h3>Email</h3>
-                    <p><a href="mailto:israelmutombo9319@gmail.com" style="color:green;">israelmutombo9319@gmail.com</a></p>
+                    <p><a href="mailto:imdigitallabs@gmail.com" style="color:green;">imdigitallabs@gmail.com</a></p>
                   </div>
                 </div>
               </div>
@@ -309,41 +309,41 @@
       </section>
 
       <!-- Citations Section -->
-      <section id="quotes" class="section" style="background-color: #f9f9f9;">
+      <section id="quotes" class="section quotes-section">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>Citations et Paroles</h2>
-            <p>Versets bibliques et paroles qui résonnent</p>
+            <h2 class="quotes-title">Citations et Paroles</h2>
+            <p class="quotes-subtitle">Versets bibliques et paroles qui résonnent</p>
           </div>
           <div class="row gy-4">
             <div class="col-md-6">
-              <div class="quote-item" style="padding: 30px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <h5 style="color: var(--accent-color); margin-bottom: 15px;">Jean 14:27</h5>
-                <p style="font-style: italic; font-size: 16px; line-height: 1.8;">
+              <div class="quote-item">
+                <h5 class="quote-reference">Jean 14:27</h5>
+                <p class="quote-text">
                   "Je vous laisse la paix, je vous donne ma paix. Je ne vous la donne pas comme le monde la donne. Que votre cœur ne se trouble point, et ne s'alarme point."
                 </p>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="quote-item" style="padding: 30px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <h5 style="color: var(--accent-color); margin-bottom: 15px;">2 Corinthiens 5:8</h5>
-                <p style="font-style: italic; font-size: 16px; line-height: 1.8;">
+              <div class="quote-item">
+                <h5 class="quote-reference">2 Corinthiens 5:8</h5>
+                <p class="quote-text">
                   "Nous sommes pleins de confiance, et nous aimons mieux quitter ce corps et demeurer auprès du Seigneur."
                 </p>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="quote-item" style="padding: 30px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <h5 style="color: var(--accent-color); margin-bottom: 15px;">Apocalypse 21:4</h5>
-                <p style="font-style: italic; font-size: 16px; line-height: 1.8;">
+              <div class="quote-item">
+                <h5 class="quote-reference">Apocalypse 21:4</h5>
+                <p class="quote-text">
                   "Il essuiera toute larme de leurs yeux, et la mort ne sera plus, et il n'y aura plus ni deuil, ni cri, ni douleur, car les premières choses ont disparu."
                 </p>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="quote-item" style="padding: 30px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <h5 style="color: var(--accent-color); margin-bottom: 15px;">Parole de Henock</h5>
-                <p style="font-style: italic; font-size: 16px; line-height: 1.8;">
+              <div class="quote-item">
+                <h5 class="quote-reference">Parole de Henock</h5>
+                <p class="quote-text">
                   "Le football n'est pas seulement un sport, c'est une passion qui rassemble les cœurs et crée des souvenirs éternels."
                 </p>
               </div>
@@ -355,20 +355,20 @@
       <!-- Credits Section -->
       <section id="credits" class="credits section">
         <div class="container section-title" data-aos="fade-up">
-          <h2>Conception</h2>
-          <p>Ce site a été créé avec amour et soin pour honorer la mémoire de Henock Ngandu Kabadi.</p>
+          <h2 class="credits-title">Conception</h2>
+          <p class="credits-subtitle">Ce site a été créé avec amour et soin pour honorer la mémoire de Henock Ngandu Kabadi.</p>
         </div>
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="text-center">
-            <p>Conception et développement par <strong style="color: #d4af37;">IM DIGITAL LABS</strong>.</p>
-            <p>
-              <strong>Contact direct :</strong><br>
-              <a href="https://wa.me/243991683269" target="_blank" style="color: #25D366; margin-right: 15px;">WhatsApp: +243 991 683 269</a><br>
-              <a href="mailto:israelmutombo9319@gmail.com" style="color: green;">Email: israelmutombo9319@gmail.com</a>
+          <div class="text-center credits-content">
+            <p class="credits-text">Conception et développement par <strong class="credits-brand">IM DIGITAL LABS</strong>.</p>
+            <p class="credits-text">
+              <strong class="credits-label">Contact direct :</strong><br>
+              <a href="https://wa.me/243991683269" target="_blank" class="credits-link whatsapp-link">WhatsApp: +243 991 683 269</a><br>
+              <a href="mailto:imdigitallabs@gmail.com" class="credits-link email-link">Email: imdigitallabs@gmail.com</a>
             </p>
-            <p>Nous espérons que ce site continuera à célébrer la vie et l'héritage de Henock, tout en permettant à ses proches de se souvenir de lui avec tendresse.</p>
-            <p>Merci pour votre visite.</p>
+            <p class="credits-text">Nous espérons que ce site continuera à célébrer la vie et l'héritage de Henock, tout en permettant à ses proches de se souvenir de lui avec tendresse.</p>
+            <p class="credits-text">Merci pour votre visite.</p>
           </div>
         </div>
       </section>
@@ -462,7 +462,7 @@ export default {
         '/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js',
         '/assets/vendor/isotope-layout/isotope.pkgd.min.js',
         '/assets/vendor/swiper/swiper-bundle.min.js',
-        'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js'
+        '/assets/vendor/glightbox/js/glightbox.min.js'
       ]
 
       try {
@@ -477,7 +477,7 @@ export default {
           this.initScrollTop()
           this.initPreloader()
           this.initScrolled()
-          // Lightbox2 auto-initializes when it sees data-lightbox attributes
+          this.initGLightbox()
         }, 100)
       } catch (error) {
         console.error('Error loading scripts:', error)
@@ -607,6 +607,37 @@ export default {
       
       window.addEventListener('scroll', toggleScrolled)
       toggleScrolled()
+    },
+    initGLightbox() {
+      // Charger le CSS de GLightbox si pas déjà chargé
+      if (!document.querySelector('link[href*="glightbox"]')) {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = '/assets/vendor/glightbox/css/glightbox.min.css'
+        document.head.appendChild(link)
+      }
+      
+      // Attendre que GLightbox soit disponible
+      if (window.GLightbox) {
+        const glightbox = window.GLightbox({
+          selector: '.glightbox',
+          touchNavigation: true,
+          loop: true,
+          autoplayVideos: false
+        })
+      } else {
+        // Réessayer après un court délai
+        setTimeout(() => {
+          if (window.GLightbox) {
+            const glightbox = window.GLightbox({
+              selector: '.glightbox',
+              touchNavigation: true,
+              loop: true,
+              autoplayVideos: false
+            })
+          }
+        }, 200)
+      }
     }
   },
   beforeUnmount() {
@@ -721,6 +752,147 @@ export default {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-color: color-mix(in srgb, var(--accent-color), black 10%) !important;
   border-color: color-mix(in srgb, var(--accent-color), black 10%) !important;
+}
+
+/* Styles pour la section Credits - Visibilité selon le thème */
+.credits-title {
+  color: var(--heading-color) !important;
+}
+
+.credits-subtitle {
+  color: var(--default-color) !important;
+}
+
+.credits-content {
+  color: var(--default-color);
+}
+
+.credits-content p,
+.credits-text {
+  color: var(--default-color) !important;
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.credits-brand {
+  color: var(--accent-color) !important;
+  font-weight: 700;
+}
+
+.credits-label {
+  color: var(--heading-color) !important;
+  font-weight: 600;
+}
+
+.credits-link {
+  color: var(--accent-color) !important;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.credits-link:hover {
+  color: color-mix(in srgb, var(--accent-color), black 15%) !important;
+  text-decoration: underline;
+}
+
+.whatsapp-link {
+  color: #25D366 !important;
+}
+
+.whatsapp-link:hover {
+  color: #20ba5a !important;
+}
+
+.email-link {
+  color: var(--accent-color) !important;
+}
+
+/* Styles pour la section Citations et Paroles - Visibilité selon le thème */
+.quotes-section {
+  background-color: var(--background-color) !important;
+}
+
+.quotes-title {
+  color: var(--heading-color) !important;
+}
+
+.quotes-subtitle {
+  color: var(--default-color) !important;
+}
+
+.quote-item {
+  padding: 30px;
+  background: var(--surface-color) !important;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.quote-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.quote-reference {
+  color: var(--accent-color) !important;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.quote-text {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--default-color) !important;
+  margin: 0;
+}
+
+/* Styles pour la section Informations sur les Obsèques - Visibilité selon le thème */
+.funeral-info-section {
+  background-color: var(--background-color) !important;
+}
+
+.funeral-title {
+  color: var(--heading-color) !important;
+}
+
+.funeral-subtitle {
+  color: var(--default-color) !important;
+}
+
+.funeral-info-item {
+  padding: 25px;
+  background: var(--surface-color) !important;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.funeral-info-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.funeral-info-title {
+  color: var(--accent-color) !important;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.funeral-info-text {
+  color: var(--default-color) !important;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.funeral-info-label {
+  color: var(--heading-color) !important;
+  font-weight: 600;
 }
 </style>
 

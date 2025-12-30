@@ -10,6 +10,7 @@
           <li><router-link to="/" :class="{ active: $route.path === '/' }" @click="handleNavClick">Accueil<br></router-link></li>
           <li v-if="$route.path === '/'"><a href="#services" @click="scrollToSection">Services</a></li>
           <li v-if="$route.path === '/'"><a href="#portfolio" @click="scrollToSection">Galerry</a></li>
+          <li><router-link to="/carte-memorial" :class="{ active: $route.path === '/carte-memorial' }" @click="handleNavClick">Carte Mémorial</router-link></li>
           <li v-if="$route.path === '/'"><a href="#contact" @click="scrollToSection">Contact</a></li>
           <li v-if="$route.path === '/temoignage'"><router-link to="/">Galerry</router-link></li>
         </ul>

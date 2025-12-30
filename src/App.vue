@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <LoadingScreen />
+    <ThemeSelector />
     <router-view />
   </div>
 </template>
 
 <script>
 import LoadingScreen from './components/LoadingScreen.vue'
+import ThemeSelector from './components/ThemeSelector.vue'
 
 export default {
   name: 'App',
   components: {
-    LoadingScreen
+    LoadingScreen,
+    ThemeSelector
   }
 }
 </script>
